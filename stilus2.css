@@ -85,3 +85,17 @@ nav ul{
     justify-content: left;
     gap: 10px;
 }
+
+@media screen {
+    main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+                        "h"
+                        "n"
+                        "as"
+                        "ar"
+                        "f";
+    gap: 10px;
+}
+}
