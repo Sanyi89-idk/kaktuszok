@@ -4,6 +4,8 @@
 
 main{
     display: grid;
+    max-width: 800px;
+    margin: 0 auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
                         "h h h"
@@ -31,30 +33,25 @@ nav{
     
 }
 
-nav a{
-    #background-color: rgb(29, 126, 190);
-    
+nav a:hover{
+    background-color: rgb(0, 191, 255);
 }
 
 a{
     color: yellow;
     text-decoration: none;
-    background-color: rgb(0, 191, 255);
     border: 3px solid rgb(29, 126, 190);
     border-radius: 5px;
     padding: 5px;
-    
-    
 }
 
 
 aside{
     grid-area: as;
-    background-color: rgb(0, 191, 255);
-    border: 3px solid rgb(29, 126, 190);
+    background-color: white;
     border-radius: 5px;
-    padding: 3px;
-    padding-bottom: 7px;
+    padding: 10px 0;
+    text-align: center;
 }
 
 footer{
@@ -69,6 +66,8 @@ footer{
 
 img{
     border-radius: 5px;
+    border: 2px solid #00a8ff;
+    margin: 15px 15px;
 }
 
 li{
@@ -86,7 +85,7 @@ nav ul{
     gap: 10px;
 }
 
-@media screen {
+@media screen and (max-width: 600px) {
     main{
     display: grid;
     grid-template-columns: 1fr;
